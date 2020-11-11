@@ -1,0 +1,12 @@
+print("Please enter your amount in the format of dollars and cents in two seperate lines:")
+dollarValue = int(input())
+centsValue = int(input())
+dollarToCentsValue = int(dollarValue * 100)
+totalCents = int(dollarToCentsValue + centsValue)
+quarters = int(totalCents/25)
+dimes = int((totalCents - (quarters*25))/10)
+nickels = int((totalCents - (quarters*25) - (dimes*10))/5)
+pennies = int(totalCents - (quarters*25) - (dimes*10) - (nickels*5))
+print(dollarValue, "dollars and",  centsValue, "cents are:")
+print(quarters, "quarters,", dimes, "dimes,", nickels, "nickels and", pennies, "pennies")
+
