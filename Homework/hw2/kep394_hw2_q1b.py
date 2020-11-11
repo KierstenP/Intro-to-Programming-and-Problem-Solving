@@ -1,0 +1,6 @@
+weightInPounds = int(input("Please enter a weight in pounds: "))
+heightInInches = int(input("Please enter a height in inches: "))
+weightInKilograms = (weightInPounds * 0.453592)
+heightInMeters = (heightInInches * 0.0254)
+bmi = weightInKilograms/(heightInMeters * heightInMeters)
+print("BMI is:", bmi)
